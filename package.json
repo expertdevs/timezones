@@ -9,12 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/cors": "^2.8.13",
     "@vvo/tzdb": "^6.108.0",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "fuse.js": "^6.6.2",
+    "lodash": "^4.17.21",
     "moment-timezone": "^0.5.43",
-    "world-countries": "^4.0.0",
-    "lodash": "^4.17.21"
+    "world-countries": "^4.0.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",

@@ -1,4 +1,5 @@
 import { getTimeZones, TimeZone } from "@vvo/tzdb";
+import cors from "cors";
 import express, { Request, Response } from "express";
 import Fuse from "fuse.js";
 import _ from "lodash";
@@ -6,6 +7,7 @@ import moment from "moment-timezone";
 import countries from "world-countries";
 const app = express();
 app.use(express.json());
+app.use(cors())
 interface BCTimezone extends TimeZone {
   latLng?: [number, number];
 }
